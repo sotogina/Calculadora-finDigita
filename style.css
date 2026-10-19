@@ -2,11 +2,11 @@
 /* === ESTILOS PERSONALIZADOS Y MEDIA QUERIES === */
 /* ========================================= */
 :root {
-    --color-primary: #004481; /* Azul corporativo */
-    --color-accent: #ffbb00; /* Amarillo/Naranja de énfasis */
-    --color-dark: #263238;
-    --color-success: #28a745; /* Verde claro para "good" */
-    --color-warning: #fd7e14; /* Naranja para "warning" */
+    --color-primary: #7baedb; /* Azul corporativo */
+    --color-accent: #c0e2f0; /* Amarillo/Naranja de énfasis */
+    --color-dark: #3f8d8d;
+    --color-success: #3ea93a; /* Verde claro para "good" */
+    --color-warning: #eb9249; /* Naranja para "warning" */
     --color-danger: #dc3545; /* Rojo para "danger" */
     --color-bg: #f8f9fa; /* Fondo muy neutro y limpio */
 }
@@ -40,7 +40,7 @@ body {
 
 /* Tarjeta Principal */
 .calculator-card {
-    background-color: #ffffff;
+    background-color: #c4dbe6;
     border-radius: 16px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
     padding: 40px;
@@ -58,19 +58,19 @@ body {
 
 .subtitle {
     font-size: 1.1rem;
-    color: #495057;
+    color: #ffffff;
 }
 
 
 .form-control {
     border-radius: 8px;
     padding: 12px;
-    border: 1px solid #ced4da;
+    border: 1px solid #87bdd8;
     transition: border-color 0.3s;
 }
 .form-control:focus {
     border-color: var(--color-primary);
-    box-shadow: 0 0 0 0.2rem rgba(0, 68, 129, 0.25);
+    box-shadow: 0 0 0 0.2rem rgba(0, 40, 75, 0.25);
 }
 
 
@@ -85,10 +85,10 @@ body {
     transition: transform 0.2s, box-shadow 0.2s;
 }
 .btn-calculate:hover {
-    background-color: #ffd24d; /* Un tono un poco más claro al hacer hover */
+    background-color: #8ab5c8; /* Un tono un poco más claro al hacer hover */
     color: var(--color-primary);
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(255, 187, 0, 0.4);
+    box-shadow: 0 5px 15px rgba(9, 66, 226, 0.4);
 }
 
 
@@ -98,8 +98,8 @@ body {
     padding: 30px;
     border-radius: 12px;
     text-align: center;
-    background-color: #e9ecef; /* Fondo de resultado ligeramente gris */
-    border: 1px solid #dee2e6;
+    background-color: #ffffff; /* Fondo de resultado ligeramente gris */
+    border: 1px solid #092642;
 }
 
 
@@ -121,4 +121,50 @@ body {
     .display-4 {
         font-size: 2rem; /* Texto más pequeño en móvil */
     }
+}
+
+#main-footer {
+  background: var(--color-primary);
+  color:white;
+  text-align:center;
+  padding: 10px;
+  margin-top:auto;
+}
+
+
+footer a {
+    color: #ffffff; 
+    text-decoration: none; /*  quita el subrayado si no te gusta */
+    font-weight: bold; /* Opcional; /*lo hace un poco más gordito para leerse mejor */
+}
+
+
+#autor{
+  margin: 0.2rem;
+  color:white;
+  text-decoration: none;
+}
+
+
+
+
+.social {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+
+.social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: #ffffff;
+  color: var(--color-primary);
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 1.5rem;
 }
